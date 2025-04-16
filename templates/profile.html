@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}My Profile - Crop Disease Detector{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card shadow border-success">
+      <div class="card-header bg-success text-white text-center">
+        <h3>👤 My Profile</h3>
+      </div>
+      <div class="card-body">
+
+        <table class="table table-bordered">
+          <tr>
+            <th scope="row">🧑 Name</th>
+            <td>{{ user['name'] }}</td>
+          </tr>
+          <tr>
+            <th scope="row">📧 Email</th>
+            <td>{{ user['email'] }}</td>
+          </tr>
+          <tr>
+            <th scope="row">📍 Location</th>
+            <td>{{ user['location'] or 'N/A' }}</td>
+          </tr>
+          <tr>
+            <th scope="row">📅 Joined On</th>
+            <td>{{ user['created_at'] }}</td>
+          </tr>
+        </table>
+
+        <div class="text-end">
+          <a href="{{ url_for('dashboard') }}" class="btn btn-outline-success">🔙 Back to Dashboard</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

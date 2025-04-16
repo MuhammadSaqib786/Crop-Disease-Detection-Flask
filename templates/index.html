@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome - Crop Disease Detector{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4 fw-bold text-success mb-4">🌾 AI-Powered Crop Disease Detection</h1>
+    <p class="lead mb-4">Empowering farmers with AI to detect plant diseases early and improve crop yield — fast, accurate, and accessible!</p>
+
+    <img src="https://img.freepik.com/free-photo/plant-biologist-working-with-digital-tablet-leafy-greens-hydroponic-greenhouse_482257-41370.jpg" class="img-fluid rounded shadow mb-4" style="max-height: 350px;" alt="Agriculture Image">
+
+    <div class="d-grid gap-3 col-6 mx-auto">
+        <a href="{{ url_for('auth.signup') }}" class="btn btn-success btn-lg">🌱 Get Started - Sign Up</a>
+        <a href="{{ url_for('auth.login') }}" class="btn btn-outline-success btn-lg">🔐 Already a Member? Log In</a>
+    </div>
+</div>
+{% endblock %}
