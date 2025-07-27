@@ -36,7 +36,7 @@ This project is a lightweight, AI-driven web application that helps farmers dete
 
 ## 📸 Demo Screenshot
 
-![App Result](result.jpeg)
+![App Result](result.png)
 
 ---
 
